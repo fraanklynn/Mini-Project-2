@@ -121,41 +121,42 @@
 ####  67  print("Studio tidak ditemukan!")
 ####  68  return jumlah_studio
 
-## menampilkan pilihan menu untuk admin memakai true agar menu muncul saat di run
-#### def menu_admin(jumlah_studio):
-####    menu = True
-####    while menu:
-####        print("\n+--------------------+")
-####        print("|      Menu Admin    |")
-####        print("+--------------------+")
-####        print("| 1. Tambah Studio   |")
-####        print("| 2. Tampilkan Semua |")
-####        print("| 3. Update Studio   |")
-####        print("| 4. Hapus Studio    |")
-####        print("| 5. Keluar          |")
-####        print("+--------------------+")
-####        opsi = input("Pilih menu: ")
+## baris 69-80 menampilkan pilihan menu untuk admin memakai true agar menu muncul saat di run
+#### 69 def menu_admin(jumlah_studio):
+#### 70  menu = True
+#### 71   while menu:
+#### 72      print("\n+--------------------+")
+####  73      print("|      Menu Admin    |")
+####  74      print("+--------------------+")
+#### 75       print("| 1. Tambah Studio   |")
+####  76      print("| 2. Tampilkan Semua |")
+####  77      print("| 3. Update Studio   |")
+####  78      print("| 4. Hapus Studio    |")
+####  79      print("| 5. Keluar          |")
+####  80      print("+--------------------+")
+## baris 81 input untuk memilih menu
+####  81      opsi = input("Pilih menu: ")
 
-## opsi 1 maka akan ke tambah studio tampilan untuk menambah studio
-####        if opsi == '1':
-####            jumlah_studio = tambah_studio(jumlah_studio)
-## opsi 2 ke tampilkan semua id, nama,harga dan kapasitas studio
-####        elif opsi == '2':
-####            tampilkan_studio()
-## opsi ke 3 perbarui studio tampilan untuk memperbarui studio yang ingin diperbarui
-####        elif opsi == '3':
-####            update_studio()
-## opsi ke 4 ke hapus studio tampilan untuk menghapus studio yang ingin dihapus
-####        elif opsi == '4':
-####            jumlah_studio = hapus_studio(jumlah_studio)
-## opsi ke 5 akan keluar dari program
-####        elif opsi == '5':
-####            print("Terima kasih telah login!")
+## baris 82-83 opsi 1 maka akan ke tambah studio tampilan untuk menambah studio
+####    82   if opsi == '1':
+####     83       jumlah_studio = tambah_studio(jumlah_studio)
+## baris 84-85 opsi 2 ke tampilkan semua id, nama,harga dan kapasitas studio
+####    84    elif opsi == '2':
+####     85       tampilkan_studio()
+## baris 86-87 opsi ke 3 perbarui studio tampilan untuk memperbarui studio yang ingin diperbarui
+####    86    elif opsi == '3':
+####    87        update_studio()
+## baris 88-89 opsi ke 4 ke hapus studio tampilan untuk menghapus studio yang ingin dihapus
+####    88    elif opsi == '4':
+####    89        jumlah_studio = hapus_studio(jumlah_studio)
+## baris 90-91 opsi ke 5 akan keluar dari program
+####    90    elif opsi == '5':
+####    91       print("Terima kasih telah login!")
 ####            menu = False
 
-## jika pilihan diluar dari opsi maka pilihan tidak ada
-####        else:
-####            print("Pilihan anda tidak ada!")
+## baris 92-93 jika pilihan diluar dari opsi maka pilihan tidak ada
+####    92    else:
+####    93        print("Pilihan anda tidak ada!")
 
 ## meminta input id studio yang mau disewa
 #### def sewa_studio():
