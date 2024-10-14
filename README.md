@@ -146,7 +146,9 @@
 ####            jumlah_studio = hapus_studio(jumlah_studio)
 ## opsi ke 5 akan keluar dari program
 ####        elif opsi == '5':
+####            print("Terima kasih telah login!")
 ####            menu = False
+
 ## jika pilihan diluar dari opsi maka pilihan tidak ada
 ####        else:
 ####            print("Pilihan anda tidak ada!")
@@ -185,9 +187,9 @@
 ## jika opsi ke 2 akan menampilkan mekanisme penyewaan studio 
 ####        elif opsi == '2':
 ####            sewa_studio()
-## jika opsi 3 maka akan keluar dari program
+## jika opsi ke 3 maka akan keluar dari program
 ####        elif opsi == '3':
-####            menu = False  
+####            menu=False
 ## jika pilihan lainnya maka pilihan tidak ada
 ####        else:
 ####            print("Pilihan tidak ada!")
@@ -200,3 +202,61 @@
 ## jika role sama dengan dan login untuk customer benar maka akan langsung ke tampilan menu untuk customer
 #### elif role == 'customer':
 ####    menu_customer()
+
+## tampilan login admin berhasil dan tampilan menu admin
+![Screenshot 2024-10-14 101227](https://github.com/user-attachments/assets/517855f9-357e-4439-8c71-f1aaa4fbe017)
+
+## tampilan studio yang tersedia
+![Screenshot 2024-10-14 101312](https://github.com/user-attachments/assets/404e9791-303b-4fec-a2a3-c42584345065)
+
+## tampilan untuk penambahan studio dan tampilan jika studio ditambah
+![Screenshot 2024-10-14 101428](https://github.com/user-attachments/assets/3c30afd4-1d44-4c5f-8750-e563e5d98c95)
+
+## tampilan jika ingin memperbarui studio dan tampilan jika studio telah diperbarui
+![Screenshot 2024-10-14 101602](https://github.com/user-attachments/assets/5c5c8415-a197-4348-9062-4f235cdd1b4d)
+
+## tampilan jika ingin menghapus studio dan tampilan studio yang telah dihapus
+![Screenshot 2024-10-14 101644](https://github.com/user-attachments/assets/72a6b7af-f954-4a62-8157-6ea187338678)
+
+## tampilan jika opsi keluar dari program
+![Screenshot 2024-10-14 101715](https://github.com/user-attachments/assets/5924d414-6462-4d9a-b763-19d4bca6cce1)
+
+## output jika login gagal
+![Screenshot 2024-10-14 101808](https://github.com/user-attachments/assets/310f9c42-c01a-461e-b145-1bf06593c8c1)
+
+## tampilan login customer berhasil dan tampilan menu customer dan tampilan studio yang tersedia untuk disewa
+![Screenshot 2024-10-14 101855](https://github.com/user-attachments/assets/7f25e7e4-5b4a-459e-9720-624c31e8a987)
+
+## tampilan jika ingin menyewa studio dan pemilihan studio yang ingin disewa dan studio yang disewa berhasil
+![Screenshot 2024-10-14 101930](https://github.com/user-attachments/assets/9294ee49-5176-4e0b-add1-ba354eee463b)
+
+## output jika ingin keluar dari program
+![Screenshot 2024-10-14 101951](https://github.com/user-attachments/assets/e6235140-c0aa-4664-b31f-55cae4a4ae1b)
+
+## output jika login customer salah
+![Screenshot 2024-10-14 110720](https://github.com/user-attachments/assets/22813382-fcc0-4303-b10e-1518f02360fa)
+
+## tampilan jika studio yang ingin di update tidak ada di data 
+![Screenshot 2024-10-14 110820](https://github.com/user-attachments/assets/a064ea91-8831-42ef-8a37-9402554ae16e)
+
+## tampilan jika studio yang ingin dihapus tidak ada di data
+![Screenshot 2024-10-14 110846](https://github.com/user-attachments/assets/5ea146dc-4ce8-4d5b-a1cb-398e7a41618b)
+
+## tampilan jika studio yang ingin disewa tidak ada di data
+![Screenshot 2024-10-14 111004](https://github.com/user-attachments/assets/cc6b3add-c73c-4ed0-8e93-89f0746ee6f3)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
