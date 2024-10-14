@@ -1,7 +1,8 @@
 # Mini-Project-2
 
 ## Flowchart 
-![flowchart mini project 2 drawio](https://github.com/user-attachments/assets/67197d06-051c-4ba5-892b-7d29e8126c1a)
+![Mini project 2](https://github.com/user-attachments/assets/fc0a60d0-f528-4245-93d9-f3fdd312aa04)
+
 
 ##  baris ke 2-4 informasi tentang nama, judul, dan NIM.
 #### 1 print("-------------------------------")
