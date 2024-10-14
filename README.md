@@ -42,17 +42,17 @@
 ####  22  else:
 ####   23    print("Login gagal!")
 
-## memeriksa apakah jumlah studio sudah mencapai batas maksimal yaitu 20 jika ya, tidak melanjutkan dan mengembalikan jumlah_studio.
-#### def tambah_studio(jumlah_studio):
-####    if jumlah_studio >= 20:
+## baris 25-26 memeriksa apakah jumlah studio sudah mencapai batas maksimal yaitu 20 jika ya, tidak melanjutkan dan mengembalikan jumlah_studio.
+#### 24 def tambah_studio(jumlah_studio):
+####  25  if jumlah_studio >= 20:
 ## jika lebih dari 20 maka sistem akan mengingatkan kapasitas studio penuh
-####        print("Tidak bisa menambah studio, kapasitas studio penuh!")
-####        return jumlah_studio
+####    26    print("Tidak bisa menambah studio, kapasitas studio penuh!")
+####    27    return jumlah_studio
 
-## meminta pengguna untuk memberi nama,harga, dan kapasitas untuk menambah studio baru
-####    nama = input("Masukkan nama studio baru: ")
-####    harga = input("Masukkan harga sewa: ")
-####    kapasitas = input("Masukkan kapasitas studio: ")
+## baris 28-30 meminta pengguna untuk memberi nama,harga, dan kapasitas untuk menambah studio baru
+####  28  nama = input("Masukkan nama studio baru: ")
+####  29  harga = input("Masukkan harga sewa: ")
+#### 30   kapasitas = input("Masukkan kapasitas studio: ")
 
 ## menambahkan studio baru ke list studios fungsi append dalam konteks ini digunakan untuk menambahkan elemen baru ke dalam list studios penambahan id jumlah studio akan bertambah satu
 ####    studios.append({
