@@ -158,19 +158,19 @@
 ####    92    else:
 ####    93        print("Pilihan anda tidak ada!")
 
-## meminta input id studio yang mau disewa
-#### def sewa_studio():
-####    id = int(input("Masukkan ID studio yang ingin disewa: "))
-## memakai looping for agar bisa mengakses semua studio
-####    for studio in studios:
-## yang didalam kurung adalah id yang ada di dalam data list di lines awal tadi
-####        if studio['id'] == id:
-## lalu memakai print studio dengan menambahkan studio['nama'] yang didalam kurung adalah data nama yang ada di list dan sama juga dengan harga
-####            print("Studio " + studio['nama'] + " berhasil disewa dengan harga " + studio['harga'] + "!")
-## return untuk mengembalikan list studio yang akan disewa
-####            return
-## jika tidak ada data yang di dalam list maka studio tidak ditemukan
-####    print("Studio tidak ditemukan!")
+## baris 95 meminta input id studio yang mau disewa
+#### 94 def sewa_studio():
+####  95  id = int(input("Masukkan ID studio yang ingin disewa: "))
+## baris 96 memakai looping for agar bisa mengakses semua studio
+#### 96   for studio in studios:
+## baris 97 yang didalam kurung adalah id yang ada di dalam data list di lines awal tadi
+####   97     if studio['id'] == id:
+## baris 98 lalu memakai print studio dengan menambahkan studio['nama'] yang didalam kurung adalah data nama yang ada di list dan sama juga dengan harga
+####    98        print("Studio " + studio['nama'] + " berhasil disewa dengan harga " + studio['harga'] + "!")
+## baris 99 return untuk mengembalikan list studio yang akan disewa
+####     99       return
+## baris 100 jika tidak ada data yang di dalam list maka studio tidak ditemukan
+####  100  print("Studio tidak ditemukan!")
 
 ## menampilkan menu untuk customer jika login untuk customer maka akan keluar menu untuk customer memakai menu=true agar menu muncul
 #### def menu_customer():
