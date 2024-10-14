@@ -28,10 +28,13 @@
 ####    password = input("Masukkan password: ")
 
 ## memeriksa apakah input sesuai jika cocok, mengembalikan role pengguna jika tidak, maka login gagal
+## jika role sama dengan admin lalu username dan password admin benar maka akan lanjut ke tampilan selanjutnya/ke tampilan admin
 ####    if role == 'admin' and username in for_admin and for_admin[username] == password:
 ####        print("Selamat datang admin!")
+## jika role sama dengan customer lalu username dan password customer benar maka akan lanjut ke tampilan selanjutnya/tampilan customer
 ####    elif role == 'customer' and username in for_customer and for_customer[username] == password:
 ####        print("Selamat datang customer!")
+## jika username atau password dari input admin dan customer salah maka login gagal
 ####    else:
 ####        print("Login gagal!")
 
@@ -47,7 +50,7 @@
 ####    harga = input("Masukkan harga sewa: ")
 ####    kapasitas = input("Masukkan kapasitas studio: ")
 
-## menambahkan studio baru ke list studios fungsi append dalam konteks ini digunakan untuk menambahkan elemen baru ke dalam list studios.
+## menambahkan studio baru ke list studios fungsi append dalam konteks ini digunakan untuk menambahkan elemen baru ke dalam list studios penambahan id jumlah studio akan bertambah satu
 ####    studios.append({
 ####        'id': jumlah_studio + 1,
 ####        'nama': nama,
@@ -79,27 +82,38 @@
     
 ## meminta input id studio yang ingin diperbarui
 #### def update_studio():
+## id harus integer karna id harus berupa angka agar mempermudah untuk mencari studio
 ####    id = int(input("Masukkan ID studio yang ingin diupdate: "))
 ## menggunakan looping for i in range agar bisa mengakses setiap studio yang ingin diubah, dan juga memperbarui studio
 ####    for i in range(jumlah_studio):
+## jika id studio ada di data list diatas maka akan otomatis mengakses studio tersebut untuk diperbarui
 ####        if studios[i]['id'] == id:
+## input nama baru untuk studio yang ingin di perbarui
 ####            studios[i]['nama'] = input("Masukkan nama baru: ")
+## input harga baru untuk studio yang ingin diperbarui
 ####            studios[i]['harga'] = input("Masukkan harga baru: ")
+## masukkan kapasitas baru untuk studio yang ingin diperbarui
 ####            studios[i]['kapasitas'] = input("Masukkan kapasitas baru: ")
+## jika sudah diisi semua maka studio berhasil diupdate
 ####            print("Studio berhasil diupdate!")
 ####            return 
+## jika id studio tidak ada dalam data maka studio tidak ditemukan
 ####    print("Studio tidak ditemukan!")
 
-## meminta id studio yang ingin dihapus
+## meminta id studio yang ingin dihapus, id studio harus integer agar mempermudah mengakses setiap studio
 #### def hapus_studio(jumlah_studio):
 ####    id = int(input("Masukkan ID studio yang ingin dihapus: "))
 
 ## looping range jumlah studio memungkinkan untuk mengakses setiap studio di list menggunakan .pop untuk menghapus elemen/studio
 ####    for i in range(jumlah_studio):
+## id studio harus ada yang di dalam data jika ingin menghapus studio
 ####        if studios[i]['id'] == id:
 ####            studios.pop(i)  
+## ini jika sudah menghapus studio
 ####            print("Studio berhasil dihapus!")
+## menegembalikan studio dan berkurang 1
 ####            return jumlah_studio - 1  
+## jika id studio tidak ada di dalam data maka studio tidak ditemukan dan tidak ada yang bisa dihapus
 ####    print("Studio tidak ditemukan!")
 ####    return jumlah_studio
 
@@ -118,17 +132,22 @@
 ####        print("+--------------------+")
 ####        opsi = input("Pilih menu: ")
 
-## mengambil input jika opsi 1 maka akan ke tambah studio, opsi 2 ke tampilkan semua id, nama,harga dan kapasitas studio, opsi ke 3 perbarui studio, opsi ke 4 ke hapus studio, opsi ke 5 akan keluar
+## opsi 1 maka akan ke tambah studio tampilan untuk menambah studio
 ####        if opsi == '1':
 ####            jumlah_studio = tambah_studio(jumlah_studio)
+## opsi 2 ke tampilkan semua id, nama,harga dan kapasitas studio
 ####        elif opsi == '2':
 ####            tampilkan_studio()
+## opsi ke 3 perbarui studio tampilan untuk memperbarui studio yang ingin diperbarui
 ####        elif opsi == '3':
 ####            update_studio()
+## opsi ke 4 ke hapus studio tampilan untuk menghapus studio yang ingin dihapus
 ####        elif opsi == '4':
 ####            jumlah_studio = hapus_studio(jumlah_studio)
+## opsi ke 5 akan keluar dari program
 ####        elif opsi == '5':
 ####            menu = False
+## jika pilihan diluar dari opsi maka pilihan tidak ada
 ####        else:
 ####            print("Pilihan anda tidak ada!")
 
@@ -166,12 +185,13 @@
 ## jika opsi ke 2 akan menampilkan mekanisme penyewaan studio 
 ####        elif opsi == '2':
 ####            sewa_studio()
-## jika opsi 3 maka akan keluar
+## jika opsi 3 maka akan keluar dari program
 ####        elif opsi == '3':
 ####            menu = False  
 ## jika pilihan lainnya maka pilihan tidak ada
 ####        else:
 ####            print("Pilihan tidak ada!")
+
 ## untuk mengeksekusi program 
 #### role = login()  
 ## jika role sama dengan admin dan login benar maka akan langsung ke tampilan menu untuk admin
