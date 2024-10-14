@@ -1,4 +1,8 @@
 # Mini-Project-2
+
+## Flowchart 
+![flowchart mini project 2 drawio](https://github.com/user-attachments/assets/67197d06-051c-4ba5-892b-7d29e8126c1a)
+
 ## informasi tentang nama, judul, dan NIM.
 #### print("-------------------------------")
 #### print("     Franklyn Galvin Lodo      ")
