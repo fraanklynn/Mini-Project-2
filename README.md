@@ -54,72 +54,72 @@
 ####  29  harga = input("Masukkan harga sewa: ")
 #### 30   kapasitas = input("Masukkan kapasitas studio: ")
 
-## menambahkan studio baru ke list studios fungsi append dalam konteks ini digunakan untuk menambahkan elemen baru ke dalam list studios penambahan id jumlah studio akan bertambah satu
-####    studios.append({
-####        'id': jumlah_studio + 1,
-####        'nama': nama,
-####        'harga': harga,
-####        'kapasitas': kapasitas
-####    })    
-## setiap penambahan studio akan bertambah 1
-####    jumlah_studio += 1  
-####    print("Studio berhasil ditambahkan!")
-####    return jumlah_studio  
+## baris 31-36 menambahkan studio baru ke list studios fungsi append dalam konteks ini digunakan untuk menambahkan elemen baru ke dalam list studios penambahan id jumlah studio akan bertambah satu
+####  31  studios.append({
+####  32      'id': jumlah_studio + 1,
+####  33     'nama': nama,
+####  34     'harga': harga,
+####  35      'kapasitas': kapasitas
+####  36  })    
+## baris 37-38 setiap penambahan studio akan bertambah 1
+####  37  jumlah_studio += 1  
+####  38  print("Studio berhasil ditambahkan!")
+####  39  return jumlah_studio  
 
-## mencetak header untuk tampilan studio dalam format tabel.
-#### def tampilkan_studio():
-####    print("\n+----+----------------+--------------+-------------+")
-####    print("| ID | Nama           | Harga        | Kapasitas   |")
-####    print("+----+----------------+--------------+-------------+")
+## baris 41-43 mencetak header untuk tampilan studio dalam format tabel.
+#### 40 def tampilkan_studio():
+#### 41   print("\n+----+----------------+--------------+-------------+")
+####   42 print("| ID | Nama           | Harga        | Kapasitas   |")
+####  43  print("+----+----------------+--------------+-------------+")
 
-## memakai looping untu mencetak informasi di dalam tabel
-####    for studio in studios:
-####        print("| " + str(studio['id']) + " | " + 
-## len(studio['nama']) menghitung panjang nama studio
-####              studio['nama'] + " " * (14 - len(studio['nama'])) + "| " + 
-## len(studio['harga']) menghitung panjang string harga studio
-####              studio['harga'] + " " * (12 - len(studio['harga'])) + "| " + 
-## str(studio['kapasitas']) menghitung panjang kapasitas studio.
-####              str(studio['kapasitas']) + " " * (11 - len(str(studio['kapasitas']))) + "|")
-## print untuk bawah tabel
-####    print("+----+----------------+--------------+-------------+")
+## baris 44 memakai looping untu mencetak informasi di dalam tabel
+####  44  for studio in studios:
+####  45      print("| " + str(studio['id']) + " | " + 
+## baris 46 len(studio['nama']) menghitung panjang nama studio
+####   46           studio['nama'] + " " * (14 - len(studio['nama'])) + "| " + 
+## baris 47 len(studio['harga']) menghitung panjang string harga studio
+####  47            studio['harga'] + " " * (12 - len(studio['harga'])) + "| " + 
+## baris 48 str(studio['kapasitas']) menghitung panjang kapasitas studio.
+####  48            str(studio['kapasitas']) + " " * (11 - len(str(studio['kapasitas']))) + "|")
+## baris 49 mencetak untuk bawah tabel
+####  49  print("+----+----------------+--------------+-------------+")
     
-## meminta input id studio yang ingin diperbarui
-#### def update_studio():
-## id harus integer karna id harus berupa angka agar mempermudah untuk mencari studio
-####    id = int(input("Masukkan ID studio yang ingin diupdate: "))
-## menggunakan looping for i in range agar bisa mengakses setiap studio yang ingin diubah, dan juga memperbarui studio
-####    for i in range(jumlah_studio):
-## jika id studio ada di data list diatas maka akan otomatis mengakses studio tersebut untuk diperbarui
-####        if studios[i]['id'] == id:
-## input nama baru untuk studio yang ingin di perbarui
-####            studios[i]['nama'] = input("Masukkan nama baru: ")
-## input harga baru untuk studio yang ingin diperbarui
-####            studios[i]['harga'] = input("Masukkan harga baru: ")
-## masukkan kapasitas baru untuk studio yang ingin diperbarui
-####            studios[i]['kapasitas'] = input("Masukkan kapasitas baru: ")
-## jika sudah diisi semua maka studio berhasil diupdate
-####            print("Studio berhasil diupdate!")
-####            return 
-## jika id studio tidak ada dalam data maka studio tidak ditemukan
-####    print("Studio tidak ditemukan!")
+## baris 50-56 meminta input id studio yang ingin diperbarui
+#### 50 def update_studio():
+## baris 51 id harus integer karna id harus berupa angka agar mempermudah untuk mencari studio
+####  51  id = int(input("Masukkan ID studio yang ingin diupdate: "))
+## baris 52 menggunakan looping for i in range agar bisa mengakses setiap studio yang ingin diubah, dan juga memperbarui studio
+####  52  for i in range(jumlah_studio):
+## baris 53 jika id studio ada di data list diatas maka akan otomatis mengakses studio tersebut untuk diperbarui
+####    53   if studios[i]['id'] == id:
+## baris 54 input nama baru untuk studio yang ingin di perbarui
+####    54        studios[i]['nama'] = input("Masukkan nama baru: ")
+## baris 55 input harga baru untuk studio yang ingin diperbarui
+####    55        studios[i]['harga'] = input("Masukkan harga baru: ")
+## baris 56 memasukkan kapasitas baru untuk studio yang ingin diperbarui
+####    56        studios[i]['kapasitas'] = input("Masukkan kapasitas baru: ")
+## baris 57-58 jika sudah diisi semua maka studio berhasil diupdate
+####     57       print("Studio berhasil diupdate!")
+####     58       return 
+## baris 59 jika id studio tidak ada dalam data maka studio tidak ditemukan
+####  59  print("Studio tidak ditemukan!")
 
-## meminta id studio yang ingin dihapus, id studio harus integer agar mempermudah mengakses setiap studio
-#### def hapus_studio(jumlah_studio):
-####    id = int(input("Masukkan ID studio yang ingin dihapus: "))
+## baris 61 meminta id studio yang ingin dihapus, id studio harus integer agar mempermudah mengakses setiap studio
+#### 60 def hapus_studio(jumlah_studio):
+####  61 id = int(input("Masukkan ID studio yang ingin dihapus: "))
 
-## looping range jumlah studio memungkinkan untuk mengakses setiap studio di list menggunakan .pop untuk menghapus elemen/studio
-####    for i in range(jumlah_studio):
-## id studio harus ada yang di dalam data jika ingin menghapus studio
-####        if studios[i]['id'] == id:
-####            studios.pop(i)  
-## ini jika sudah menghapus studio
-####            print("Studio berhasil dihapus!")
-## menegembalikan studio dan berkurang 1
-####            return jumlah_studio - 1  
-## jika id studio tidak ada di dalam data maka studio tidak ditemukan dan tidak ada yang bisa dihapus
-####    print("Studio tidak ditemukan!")
-####    return jumlah_studio
+## baris 62-64 looping range jumlah studio memungkinkan untuk mengakses setiap studio di list menggunakan .pop untuk menghapus elemen/studio
+####  62 for i in range(jumlah_studio):
+## baris 63 id studio harus ada yang di dalam data jika ingin menghapus studio
+####   63     if studios[i]['id'] == id:
+####   64         studios.pop(i)  
+## baris 65 ini jika sudah menghapus studio
+####   65         print("Studio berhasil dihapus!")
+## baris 66 mengembalikan studio dan berkurang 1
+####    66        return jumlah_studio - 1  
+## baris 67-68 jika id studio tidak ada di dalam data maka studio tidak ditemukan dan tidak ada yang bisa dihapus
+####  67  print("Studio tidak ditemukan!")
+####  68  return jumlah_studio
 
 ## menampilkan pilihan menu untuk admin memakai true agar menu muncul saat di run
 #### def menu_admin(jumlah_studio):
