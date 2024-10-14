@@ -4,26 +4,26 @@
 ![flowchart mini project 2 drawio](https://github.com/user-attachments/assets/67197d06-051c-4ba5-892b-7d29e8126c1a)
 
 ##  baris ke 2-4 informasi tentang nama, judul, dan NIM.
-#### print("-------------------------------")
-#### print("     Franklyn Galvin Lodo      ")
-#### print("        Mini Project 2         ")
-#### print("         2409116047            ")
-#### print("-------------------------------")
+#### 1 print("-------------------------------")
+#### 2 print("     Franklyn Galvin Lodo      ")
+#### 3 print("        Mini Project 2         ")
+#### 4 print("         2409116047            ")
+#### 5 print("-------------------------------")
 
-## baris ke 2-4 mendefinisikan list studios yang berisi dictionary untuk setiap studio, dengan data seperti ID, nama, harga, dan kapasitas.
-#### studios = [
-####    {'id': 1, 'nama': 'Studio A', 'harga': 'Rp 65000', 'kapasitas': 4},
-####   {'id': 2, 'nama': 'Studio B', 'harga': 'Rp 85000', 'kapasitas': 8},
-####    {'id': 3, 'nama': 'Studio C', 'harga': 'Rp 75000', 'kapasitas': 6},
-#### ]
+## baris ke 7-9 mendefinisikan list studios yang berisi dictionary untuk setiap studio, dengan data seperti ID, nama, harga, dan kapasitas.
+#### 6 studios = [
+####  7 {'id': 1, 'nama': 'Studio A',  'harga': 'Rp 65000', 'kapasitas': 4},
+####  8 {'id': 2, 'nama': 'Studio B', 'harga': 'Rp 85000', 'kapasitas': 8},
+####  9  {'id': 3, 'nama': 'Studio C', 'harga': 'Rp 75000', 'kapasitas': 6},
+#### 10 ]
 
-## baris ke 3 dan 5 mendefinisikan dictionary untuk menyimpan username dan password untuk admin dan customer.
+## baris ke 12-13 mendefinisikan dictionary untuk menyimpan username dan password untuk admin dan customer.
 ## jumlah studio adalah 3 
-#### jumlah_studio = 3
+#### 11 jumlah_studio = 3
 ## untuk list pertama ada username untuk admin serta passwordnya
-#### for_admin = {'admin': 'galpen'}  
+#### 12 for_admin = {'admin': 'galpen'}  
 ## untuk list kedua ada username customer serta passwordnya
-##### for_customer = {'customer': 'belidong'}  
+##### 13 for_customer = {'customer': 'belidong'}  
 
 ##  baris 2-4 meminta input dari pengguna untuk role admin atau customer , username, dan password.
 #### def login():
