@@ -3,21 +3,21 @@
 ## Flowchart 
 ![flowchart mini project 2 drawio](https://github.com/user-attachments/assets/67197d06-051c-4ba5-892b-7d29e8126c1a)
 
-## informasi tentang nama, judul, dan NIM.
+##  baris ke 8-10 informasi tentang nama, judul, dan NIM.
 #### print("-------------------------------")
 #### print("     Franklyn Galvin Lodo      ")
 #### print("        Mini Project 2         ")
 #### print("         2409116047            ")
 #### print("-------------------------------")
 
-## mendefinisikan list studios yang berisi dictionary untuk setiap studio, dengan data seperti ID, nama, harga, dan kapasitas.
+## baris ke 15-17 mendefinisikan list studios yang berisi dictionary untuk setiap studio, dengan data seperti ID, nama, harga, dan kapasitas.
 #### studios = [
 ####    {'id': 1, 'nama': 'Studio A', 'harga': 'Rp 65000', 'kapasitas': 4},
 ####   {'id': 2, 'nama': 'Studio B', 'harga': 'Rp 85000', 'kapasitas': 8},
 ####    {'id': 3, 'nama': 'Studio C', 'harga': 'Rp 75000', 'kapasitas': 6},
 #### ]
 
-## mendefinisikan dictionary untuk menyimpan username dan password untuk admin dan customer.
+## baris 24 dan 26 mendefinisikan dictionary untuk menyimpan username dan password untuk admin dan customer.
 ## jumlah studio adalah 3 
 #### jumlah_studio = 3
 ## untuk list pertama ada username untuk admin serta passwordnya
@@ -25,7 +25,7 @@
 ## untuk list kedua ada username customer serta passwordnya
 ##### for_customer = {'customer': 'belidong'}  
 
-##   meminta input dari pengguna untuk role admin atau customer , username, dan password.
+##  baris 30-32 meminta input dari pengguna untuk role admin atau customer , username, dan password.
 #### def login():
 ####    role = input("Masukkan role (admin/customer): ")
 ####    username = input("Masukkan username: ")
