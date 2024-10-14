@@ -25,22 +25,22 @@
 ## untuk list kedua ada username customer serta passwordnya
 ##### 13 for_customer = {'customer': 'belidong'}  
 
-##  baris 2-4 meminta input dari pengguna untuk role admin atau customer , username, dan password.
-#### def login():
-####    role = input("Masukkan role (admin/customer): ")
-####    username = input("Masukkan username: ")
-####    password = input("Masukkan password: ")
+##  baris 15-17 meminta input dari pengguna untuk role admin atau customer , username, dan password.
+#### 14 def login():
+####  15  role = input("Masukkan role (admin/customer): ")
+####  16   username = input("Masukkan username: ")
+####  17  password = input("Masukkan password: ")
 
-## baris ke 1-2 memeriksa apakah input sesuai jika cocok, mengembalikan role pengguna jika tidak, maka login gagal
-## jika role sama dengan admin lalu username dan password admin benar maka akan lanjut ke tampilan selanjutnya/ke tampilan admin
-####    if role == 'admin' and username in for_admin and for_admin[username] == password:
-####        print("Selamat datang admin!")
-## jika role sama dengan customer lalu username dan password customer benar maka akan lanjut ke tampilan selanjutnya/tampilan customer
-####    elif role == 'customer' and username in for_customer and for_customer[username] == password:
-####        print("Selamat datang customer!")
-## jika username atau password dari input admin dan customer salah maka login gagal
-####    else:
-####        print("Login gagal!")
+## baris ke 18-21 memeriksa apakah input sesuai jika cocok, mengembalikan role pengguna jika tidak, maka login gagal
+## baris 18-19 jika role sama dengan admin lalu username dan password admin benar maka akan lanjut ke tampilan selanjutnya/ke tampilan admin
+####   18 if role == 'admin' and username in for_admin and for_admin[username] == password:
+####   19     print("Selamat datang admin!")
+## baris 20-21 jika role sama dengan customer lalu username dan password customer benar maka akan lanjut ke tampilan selanjutnya/tampilan customer
+####   20 elif role == 'customer' and username in for_customer and for_customer[username] == password:
+####     21   print("Selamat datang customer!")
+## baris 22-23 jika username atau password dari input admin dan customer salah maka login gagal
+####  22  else:
+####   23    print("Login gagal!")
 
 ## memeriksa apakah jumlah studio sudah mencapai batas maksimal yaitu 20 jika ya, tidak melanjutkan dan mengembalikan jumlah_studio.
 #### def tambah_studio(jumlah_studio):
