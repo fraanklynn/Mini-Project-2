@@ -172,41 +172,41 @@
 ## baris 100 jika tidak ada data yang di dalam list maka studio tidak ditemukan
 ####  100  print("Studio tidak ditemukan!")
 
-## menampilkan menu untuk customer jika login untuk customer maka akan keluar menu untuk customer memakai menu=true agar menu muncul
-#### def menu_customer():
-####    menu = True
-####    while menu:
-## tampilan menunya
-#####        print("\n+--------------------+")
-####        print("|    Menu Customer    |")
-####        print("+--------------------+")
-####        print("| 1. Tampilkan Semua |")
-####        print("| 2. Sewa Studio     |")
-####        print("| 3. Keluar          |")
-####        print("+--------------------+")
-## pengguna memilih opsi untuk menunya yang dipilih apa saja
-####        opsi = input("Pilih menu: ")
-## jika opsi 1 akan menampilkan id studio nama harga dan kapasitas studio yang tersedia
-####        if opsi == '1':
-####            tampilkan_studio()
-## jika opsi ke 2 akan menampilkan mekanisme penyewaan studio 
-####        elif opsi == '2':
-####            sewa_studio()
-## jika opsi ke 3 maka akan keluar dari program
-####        elif opsi == '3':
-####            menu=False
-## jika pilihan lainnya maka pilihan tidak ada
-####        else:
-####            print("Pilihan tidak ada!")
+## baris 102-103 menampilkan menu untuk customer jika login untuk customer maka akan keluar menu untuk customer memakai menu=true agar menu muncul
+#### 101 def menu_customer():
+#### 102   menu = True
+#### 103   while menu:
+## baris 104-110 tampilan menunya
+#####  104      print("\n+--------------------+")
+####   105     print("|    Menu Customer    |")
+####   106     print("+--------------------+")
+####   107     print("| 1. Tampilkan Semua |")
+####   108     print("| 2. Sewa Studio     |")
+####   109     print("| 3. Keluar          |")
+####  110      print("+--------------------+")
+## baris 111 pengguna memilih opsi untuk menunya yang dipilih apa saja
+####   111     opsi = input("Pilih menu: ")
+## baris 112-113 jika opsi 1 akan menampilkan id studio nama harga dan kapasitas studio yang tersedia
+####  112      if opsi == '1':
+####   113         tampilkan_studio()
+## baris 114-115 jika opsi ke 2 akan menampilkan mekanisme penyewaan studio 
+####   114     elif opsi == '2':
+####   115         sewa_studio()
+## baris 116-117 jika opsi ke 3 maka akan keluar dari program
+####  116      elif opsi == '3':
+####  117          menu=False
+## baris 118-119 jika pilihan lainnya maka pilihan tidak ada
+####   118    else:
+####    119        print("Pilihan tidak ada!")
 
-## untuk mengeksekusi program 
-#### role = login()  
-## jika role sama dengan admin dan login benar maka akan langsung ke tampilan menu untuk admin
-#### if role == 'admin':
-####    menu_admin(jumlah_studio)   
-## jika role sama dengan dan login untuk customer benar maka akan langsung ke tampilan menu untuk customer
-#### elif role == 'customer':
-####    menu_customer()
+## baris 120 untuk mengeksekusi program 
+#### 120 role = login()  
+## baris 121-122 jika role sama dengan admin dan login benar maka akan langsung ke tampilan menu untuk admin
+#### 121 if role == 'admin':
+#### 122   menu_admin(jumlah_studio)   
+## baris 123-124 jika role sama dengan dan login untuk customer benar maka akan langsung ke tampilan menu untuk customer
+#### 123 elif role == 'customer':
+#### 124   menu_customer()
 
 ## tampilan login admin berhasil dan tampilan menu admin
 ![Screenshot 2024-10-14 101227](https://github.com/user-attachments/assets/517855f9-357e-4439-8c71-f1aaa4fbe017)
